@@ -1,0 +1,147 @@
+body {
+  overflow: hidden;
+}
+.button-like-div {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #adc4ce;
+  /* display: flex;
+  justify-content: space-evenly; */
+  z-index: 1000; /* Ensure it's above other content */
+}
+.button-like-div:hover {
+  background-color: #0056b3;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  height: 1000vh;
+  width: 1000vw;
+  /* scroll-behavior: smooth; */
+  overflow: scroll;
+}
+
+.main-container {
+  height: 200vh;
+  width: 200vw;
+  /* scroll-behavior: smooth; */
+  background-color: #adc4ce;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.node {
+  cursor: pointer;
+}
+#textToCopy {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #333;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  
+}
+.styled-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+  width: 300px;
+  outline: none;
+   /* Remove the default outline */
+}
+
+/* Add hover effect */
+.styled-input:hover {
+  border-color: #2980b9;
+}
+
+/* Add focus effect */
+.styled-input:focus {
+  border-color: #3cd6e7;
+  background-color: #fff;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.sticky-header {
+  background-color: #1d5d9b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-link {
+  /* padding: 10px 20px; */
+  cursor: pointer;
+  margin: 4px;
+  transition: background-color 0.3s;
+}
+
+/* .navbar-link:hover {
+  background-color: #2980b9;
+} */
+
+/* Optional: Apply some spacing to the content area */
+.content {
+  padding: 20px;
+}
+
+
+.content2 
+{
+  height:50px;
+  width: 400px;
+  position: fixed;
+  bottom: 50px;
+  right:30px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-column-gap: 10px;
+  
+}
+
+.segment2 {
+  display: flex;
+  align-items: center;
+}

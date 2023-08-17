@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sticky-header">
+      <div class="button-like-div navbar-brand">Add Root</div>
+      <div class="navbar-links">
+        <div class="button-like-div navbar-link" onclick="postorder(1)">
+          Postorder Traversal
+        </div>
+        <div class="button-like-div navbar-link" onclick="preorder(1)">
+          Preorder Traversal
+        </div>
+        <div class="button-like-div navbar-link" onclick="inorder(1)">
+          Inorder Traversal
+        </div>
+        <div class="button-like-div navbar-link" onclick="resetNodes()">
+          Reset
+        </div>
+      </div>
+    </div>
+    
+  
+    <div class="content2">
+      <div  class="segment1" id="textToCopy" >{2,3,4,5,6}</div>
+      <div class="segment2">
+        <div class="button-like-div" id="copyButton" >Copy</div>
+      </div>
+    </div>
+    <div class="main-container">
+      <svg class="container">
+        <g class="connections">
+          <line id="connector" stroke="#000" stroke-width="2"></line>
+        </g>
+        <g class="nodes"></g>
+      </svg>
+    </div>
+    
+    <script src="traversalArray.js"></script>
+    <script src="queue.js"></script>
+    <script src="utils.js"></script>
+    <script src="index.js"></script>
+    <script src="postorder.js"></script>
+    <script src="preorder.js"></script>
+    <script src="inorder.js"></script>
+  </body>
+</html>
